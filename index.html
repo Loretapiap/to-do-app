@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TO DO APP</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="hidden-md hidden-lg">
+	<header>
+		<div class="container verde">
+			<div class="row">
+				<div class="col-sm-12 col-xs-12">
+					<img src="avatar.png" alt="" class="center-block img-responsive">
+					<h1 class="text-center">TO-DO APP</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container ingresaT">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="caja">
+						<h2 class="text-center">Ingresar tarea</h2>
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+														
+								<textarea id="inputCuadro" class="center-block"></textarea>
+								<br>
+								<button type="button" class="btn btn-info center-block"  onclick="agregarTarea()"><span class="glyphicon glyphicon-plus"></span> Añadir tarea</button>
+							</div>
+						</div>
+						<div id="lista">
+							<div id="listaTareas">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container footer">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<span>&copy Laboratoria SCL2016. <i>Todos los derechos reservados</i></span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>
