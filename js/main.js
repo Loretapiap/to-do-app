@@ -4,6 +4,7 @@ var listaTareas = document.getElementById("listaTareas");
 
 function agregarTarea() {
     var texto = document.getElementById("inputCuadro").value;
+	
    
     if(texto != ""){
     	var div = document.createElement("div");
@@ -15,7 +16,9 @@ function agregarTarea() {
         tarea.setAttribute("class", "tarea");
         var btn = document.createElement("button");
         btn.setAttribute("class", "glyphicon glyphicon-trash");
-        btn.addEventListener('click', eliminarTarea);
+		var textob = document.createTextNode("Borrar");
+        btn.appendChild(textob);
+		btn.addEventListener('click', eliminarTarea);
         checked.onclick = function(){
         	if(this.checked === true){
         		tarea.setAttribute("class", "tachar");
